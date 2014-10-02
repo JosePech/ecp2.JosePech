@@ -41,5 +41,21 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals((double)3/2,fraction.decimal(), 0.001);
     }
+    
+    @Test
+    public void testEsPropia() {
+    	assertFalse(fraction.EsPropia());
+    }
+    
+    @Test
+    public void testEsImpropia() {
+    	assertTrue(fraction.EsPropia());
+    }
+    
+    public void testMultiplicar(){
+        Fraction multiplo = new Fraction(2,2);        
+        assertEquals(fraction.multiplicar(multiplo).getNumerator(), multiplo.getNumerator() * fraction.getNumerator(), 0.5);
+        assertEquals(fraction.multiplicar(multiplo).getDenominator(), multiplo.getDenominator() * fraction.getDenominator(), 0.5);
+    }
 
 }

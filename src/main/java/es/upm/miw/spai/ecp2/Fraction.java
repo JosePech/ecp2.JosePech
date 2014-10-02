@@ -60,4 +60,12 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean EsPropia(){
+    	return false;
+    }
+    
+    public Fraction multiplicar(Fraction multiplo){
+    	return new Fraction();
+    }
+    
 }
