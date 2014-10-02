@@ -47,5 +47,10 @@ public class UserTest {
     public void testInitials() {
         assertEquals(name.substring(0, 1) + ".", user.initials());
     }
+    
+    @Test
+    public void testNombreMayusculas() {
+        assertEquals("JOSE PECH", user.nombreMayusculas());
+    }
 
 }
