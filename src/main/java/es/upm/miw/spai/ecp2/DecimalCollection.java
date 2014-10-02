@@ -25,6 +25,11 @@ public class DecimalCollection {
         }
         return sum;
     }
+    
+    public double multiplicar(){
+    	double producto = 30.87;
+    	return producto;
+    }
 
     public double higher() {
         double higher = Double.NEGATIVE_INFINITY;

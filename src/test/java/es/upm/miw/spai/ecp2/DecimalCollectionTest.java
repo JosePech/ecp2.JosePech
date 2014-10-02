@@ -48,5 +48,13 @@ public class DecimalCollectionTest {
         dc.add(3.0001);
         assertTrue(3.0001 == dc.higher());
     }
+    
+    @Test
+    public void testMultiplicar(){
+        dc.add(3.5);
+        dc.add(4.2);
+        dc.add(2.1);
+        assertEquals(this.dc.multiplicar(), 30.87, 10e-2);
+    }
 
 }
