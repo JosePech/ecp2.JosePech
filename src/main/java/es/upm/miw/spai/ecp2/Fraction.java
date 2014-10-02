@@ -61,11 +61,15 @@ public class Fraction {
     }
     
     public boolean EsPropia(){
-    	return false;
+    	return this.numerator < this.denominator;
+    }
+    
+    public boolean EsImpropia(){
+    	return !this.EsPropia();
     }
     
     public Fraction multiplicar(Fraction multiplo){
-    	return new Fraction();
+    	return new Fraction(this.numerator * multiplo.getNumerator(), this.denominator * multiplo.getDenominator());
     }
     
 }
