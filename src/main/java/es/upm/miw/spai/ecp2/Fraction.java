@@ -65,7 +65,7 @@ public class Fraction {
     }
     
     public boolean EsImpropia(){
-    	return !this.EsPropia();
+    	return this.numerator > this.denominator;
     }
     
     public Fraction multiplicar(Fraction multiplo){
