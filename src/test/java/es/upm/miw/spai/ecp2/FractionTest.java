@@ -49,7 +49,7 @@ public class FractionTest {
     
     @Test
     public void testEsImpropia() {
-    	assertTrue(fraction.EsPropia());
+    	assertTrue(fraction.EsImpropia());
     }
     
     public void testMultiplicar(){
