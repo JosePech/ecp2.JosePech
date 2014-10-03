@@ -27,8 +27,11 @@ public class DecimalCollection {
     }
     
     public double multiplicar(){
-    	double producto = 30.87;
-    	return producto;
+        double multiplicar = 1;
+        for (double item : this.collection) {
+            multiplicar *= item;
+        }
+    	return multiplicar;
     }
 
     public double higher() {
