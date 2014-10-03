@@ -37,8 +37,8 @@ public class User {
     public String initials() {
         return this.name.substring(0, 1) + ".";
     }
-    
-    public String nombreMayusculas(){
-    	return "";
+
+    public String nombreMayusculas() {
+        return fullName().toUpperCase();
     }
 }
